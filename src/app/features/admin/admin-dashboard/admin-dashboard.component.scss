@@ -1,0 +1,42 @@
+.admin-dashboard-container {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background: linear-gradient(135deg, #232526 0%, #414345 100%);
+color: #fff;
+font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+h2 {
+font-size: 2.2rem;
+margin-bottom: 2rem;
+color: #00ffe7;
+text-shadow: 0 0 8px #00ffe7;
+}
+
+.actions {
+display: flex;
+gap: 2rem;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.action-btn {
+padding: 1.2rem 2.5rem;
+font-size: 1.1rem;
+border: none;
+border-radius: 2rem;
+background: linear-gradient(90deg, #00ffe7 0%, #00bfff 100%);
+color: #232526;
+font-weight: 600;
+cursor: pointer;
+box-shadow: 0 0 16px #00ffe7;
+transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+&:hover, &:focus {
+    background: #232526;
+    color: #00ffe7;
+    box-shadow: 0 0 24px #00ffe7;
+}
+}

@@ -1,0 +1,97 @@
+.user-create-container {
+background: rgba(35, 37, 38, 0.97);
+border-radius: 2rem;
+box-shadow: 0 8px 32px 0 rgba(0,255,231,0.15);
+padding: 2.5rem 2rem;
+margin: 3rem auto;
+max-width: 400px;
+color: #fff;
+font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+h2 {
+color: #00ffe7;
+text-align: center;
+margin-bottom: 2rem;
+}
+
+label {
+display: block;
+margin-bottom: 1.2rem;
+font-weight: 600;
+}
+
+input, select {
+width: 92%;
+padding: 0.8rem 1rem;
+border-radius: 1.2rem;
+border: none;
+margin-top: 0.5rem;
+background: #232526;
+color: #00ffe7;
+font-size: 1rem;
+margin-bottom: 0.5rem;
+&:focus {
+    background: #00ffe7;
+    color: #232526;
+    outline: none;
+}
+}
+.form-buttons {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 2rem;
+  border: none;
+  background: #232526;
+  color: #00ffe7;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1rem;
+  box-shadow: 0 0 8px #00ffe7;
+  transition: background 0.2s, color 0.2s;
+  &:hover, &:focus {
+    background: #00ffe7;
+    color: #232526;
+  }
+}
+
+.btn-secondary {
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 2rem;
+  border: none;
+  background: transparent;
+  color: #00ffe7;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1rem;
+  box-shadow: 0 0 8px #00ffe7;
+  border: 2px solid #00ffe7;
+  transition: background 0.2s, color 0.2s;
+  &:hover, &:focus {
+    background: #00ffe7;
+    color: #232526;
+  }
+}
+
+.success-msg {
+color: #00ffe7;
+margin-top: 1rem;
+text-align: center;
+}
+
+.error-msg {
+color: #ff3c3c;
+margin-top: 1rem;
+text-align: center;
+}

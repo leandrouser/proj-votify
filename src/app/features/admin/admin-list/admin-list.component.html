@@ -1,0 +1,32 @@
+<div class="admin-list-wrapper">
+  <div class="admin-list-container">
+    <h2>Agendas</h2>
+    <div *ngIf="agendas.length === 0">Nenhuma pauta encontrada.</div>
+    <ul>
+      <li *ngFor="let agenda of agendas">
+        <div><strong>Descrição:</strong> {{ agenda.description }}</div>
+        <div><strong>Início:</strong> {{ agenda.startVotingAt | date:'dd/MM/yyyy HH:mm' }}</div>
+        <div><strong>Fim:</strong> {{ agenda.endVotingAt | date:'dd/MM/yyyy HH:mm' }}</div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="admin-list-container">
+    <h2>Seções</h2>
+    <div *ngIf="sessions.length === 0">Nenhuma seção encontrada.</div>
+      <div class="session-cards">
+    <div class="session-card" *ngFor="let session of sessions">
+      <h3>{{ session.title }}</h3>
+      <p><strong>Descrição:</strong> {{ session.description }}</p>
+      <p><strong>Data de Início:</strong> {{ session.startAt | date:'dd/MM/yyyy HH:mm' }}</p>
+      <p><strong>Data de Fim:</strong> {{ session.endAt | date:'dd/MM/yyyy HH:mm' }}</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="pagination">
+  <button (click)="prevPage()" [disabled]="page === 1">Anterior</button>
+  <span>Página {{ page }}</span>
+  <button (click)="nextPage()" [disabled]="!hasMore">Próxima</button>
+</div>

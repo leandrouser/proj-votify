@@ -1,0 +1,20 @@
+<!-- login.component.html (template inline no TS ou separado) -->
+<div class="login-container">
+  <div class="login-card">
+    <div class="logo">
+      <span class="material-symbols-outlined">how_to_vote</span>
+    </div>
+    <h2><span class="highlight">Votify</span> Login</h2>
+    <p class="subtitle">Gerencie votações de forma segura e moderna</p>
+    <form (ngSubmit)="onSubmit()">
+      <input [(ngModel)]="email" name="email" placeholder="Email" required autocomplete="username">
+      <input [(ngModel)]="password" name="password" type="password" placeholder="Senha" required autocomplete="current-password">
+      <button type="submit" class="login-btn">Entrar</button>
+    </form>
+    <div *ngIf="error" class="error-msg">{{ error }}</div>
+    <div class="links">
+      <a href="#" (click)="onForgotPassword($event)">Esqueceu a senha?</a>
+      <a href="#" (click)="onRegister($event)">Criar conta</a>
+    </div>
+  </div>
+</div>
