@@ -1,0 +1,110 @@
+.vote-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  background: #181a1b;
+  border-radius: 2rem;
+  box-shadow: 0 0 16px #00ffe7;
+  padding: 2rem;
+  color: #00ffe7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 2rem;
+  color: #00ffe7;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  color: #00ffe7;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  border: none;
+  background: #232526;
+  color: #00ffe7;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 0 8px #00ffe733;
+  &:focus {
+    background: #00ffe7;
+    color: #232526;
+    outline: none;
+  }
+}
+
+.form-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 2rem;
+  border: none;
+  background: #00ffe7;
+  color: #232526;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 0 8px #00ffe7;
+  transition: background 0.2s, color 0.2s;
+  &:hover, &:focus {
+    background: #232526;
+    color: #00ffe7;
+  }
+}
+
+.btn-secondary {
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 2rem;
+  border: none;
+  background: transparent;
+  color: #00ffe7;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 8px #00ffe7;
+  border: 2px solid #00ffe7;
+  transition: background 0.2s, color 0.2s;
+  &:hover, &:focus {
+    background: #00ffe7;
+    color: #232526;
+  }
+}
+
+.success-msg {
+  color: #00ffe7;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.error-msg {
+  color: #ff3c3c;
+  margin-top: 1rem;
+  text-align: center;
+}
